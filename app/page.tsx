@@ -6,8 +6,12 @@ export default async function Home() {
   console.log(post)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
+      <Link href={"post/" + post.slug}>
+      <div>
       <h1>{post.title}</h1>
       <p>{post.name}</p>
+      </div>
+      </Link>
     </main>
   )
 }
