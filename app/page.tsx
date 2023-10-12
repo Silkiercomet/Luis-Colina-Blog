@@ -14,7 +14,7 @@ export default async function Home() {
 
 async function getData() {
   try{
-    const res = await client.fetch(`*[_type == "post"][0]{title, "name": author->name, "categories": categories[]->title}`)
+    const res = await client.fetch(`*[_type == "post"][0]{title, "name": author->name, "categories": categories[]->title,"slug": slug.current}`)
     return res
   }catch (err){
     console.log(err)
