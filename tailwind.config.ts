@@ -22,6 +22,7 @@ const config: Config = {
       'hard-red' : 'hsl(0, 93%, 64%)',
       'medium-gray': 'hsl(240, 12%, 30%)',
       'dark-blue': 'hsl(240, 14%, 11%)',
+      'logo-blue': '#336A86'
     }
   },
   plugins: [],
